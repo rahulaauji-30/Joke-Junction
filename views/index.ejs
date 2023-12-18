@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title">
+        <h1 style="text-align: center;">Joke Junction</h1>
+        <p style="text-align: center;">Any | Misc | Programming | Dark | Pun | Spooky | Christmas</p>
+    </div>
+    <div class="main">
+        
+        <% if(locals.joke){ %>
+            <p><%=joke%></p>
+        <% }%>
+            <form action="/" method="post">
+                <div class="name">
+                
+                    <select name="type" id="">
+                        <option value="Any">Any</option>
+                        <option value="Misc">Misc</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Dark">Dark</option>
+                        <option value="Christmas">Christmas</option>
+                        <option value="Spooky">Spooky</option>
+                    </select>
+                    <input type="submit" value="Generate"   class="btn-grad">
+                </div>
+            </form>
+    </div>
+</body>
+</html>
